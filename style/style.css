@@ -4,21 +4,24 @@ body
 	display: flex;
 }
 					/* PARTIE GAUCHE*/
+.header2
+{
+	display: none;
+}
 .presentation
 {
 	display: flex;
 	flex-direction: column;
 	width: 40%;
-	max-width: 400px;
+	max-width: 350px;
 	background-color: #64b5f6;
 	padding-top: 2%;
 }
 .rounded-image
 {
-	width: 80%;
+	width: 50%;
 	border-radius: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 5% auto;
 }
 .container
 {
@@ -49,7 +52,7 @@ h1
 .icones-loisirs
 {
 	display: flex;
-	margin: 10% 0 10% 0;
+	margin: 10% auto;
 	
 }
 .presentation .fas
@@ -59,6 +62,7 @@ h1
 	margin: auto;
 	padding: 2%;
 }
+
 					/* PARTIE DROITE*/
 .parcours
 {
@@ -174,9 +178,10 @@ h6
 	}
 	.presentation
 	{
+		background-color: white;
 		width: 100%;
 		max-width: 800px;
-		height: 250px;
+		height: 800px;
 		margin: 0;
 		padding: 0;
 	}
@@ -185,31 +190,59 @@ h6
 		width: 30%;
 		margin-top: 20px;
 	}
-	.container
-	{
-		display: flex;
-		flex-direction: row;
-		margin-top: 1200px;
-	}
 	.nav
 	{
 		width: 33%;
 	}
 	.header
 	{
+		display: none;
+	}
+	.prenom
+	{
+		font-size: 1.5em;
+	}
+	.metier
+	{
+		font-size: 1em;
+	}
+	.header2
+	{
+		background-color: white;
 		display: flex;
 		flex-direction: column;
 		align-self: center;
-		width: 70%;
+		width: 50%;
 		margin: 0;
-		margin-bottom: 15%;	
+		margin-bottom: 10%;	
+	}
+	.container
+	{
+		display: flex;
+		flex-direction: row;
+		height: 250px;
+	}
+	.icones-loisirs
+	{
+		display: flex;
+		flex-direction: column;
+		height: 200px;
+		margin: auto;
+	}
+	.icones-loisirs .fas
+	{
+		margin: auto;
+	}
+	.divider2
+	{
+		width: 50%;
+		border: 1px solid #64b5f6;
+		margin: auto;
+		padding: 0;
 	}
 	.parcours
 	{
-		display: flex;
 		width: 100%;
-		margin: 0;
-		padding: 0;
 	}
 	
 	
