@@ -13,13 +13,13 @@ body
 	display: flex;
 	flex-direction: column;
 	width: 40%;
-	max-width: 350px;
+	max-width: 300px;
 	background-color: #64b5f6;
 	padding-top: 2%;
 }
 .rounded-image
 {
-	width: 50%;
+	width: 60%;
 	border-radius: 50%;
 	margin: 5% auto;
 }
@@ -52,7 +52,7 @@ h1
 .icones-loisirs
 {
 	display: flex;
-	margin: 10% auto;
+	margin: 20% auto;
 	
 }
 .presentation .fas
@@ -62,7 +62,6 @@ h1
 	margin: auto;
 	padding: 2%;
 }
-
 					/* PARTIE DROITE*/
 .parcours
 {
@@ -70,7 +69,6 @@ h1
 	flex-direction: column;
 	padding-left: 5%;
 }
-
 .header
 {
 	margin: 20% 0;
@@ -139,7 +137,6 @@ li
 {
 	display: flex;
 	margin-bottom: 50px;
-
 }
 li p 
 {
@@ -169,6 +166,7 @@ h6
 {
 	font-size: 0.8em;
 }
+						/*ECRANS PETITE TAILLE*/
 @media (max-width: 800px)
 {
 	body
@@ -178,21 +176,18 @@ h6
 	}
 	.presentation
 	{
-		background-color: white;
+		display: flex;
 		width: 100%;
 		max-width: 800px;
 		height: 800px;
 		margin: 0;
 		padding: 0;
+		margin-bottom: 5%;
 	}
 	.rounded-image
 	{
 		width: 30%;
 		margin-top: 20px;
-	}
-	.nav
-	{
-		width: 33%;
 	}
 	.header
 	{
@@ -200,19 +195,19 @@ h6
 	}
 	.prenom
 	{
-		font-size: 1.5em;
+		font-size: 3.5em;
 	}
 	.metier
 	{
-		font-size: 1em;
+		font-size: 2em;
 	}
 	.header2
 	{
 		background-color: white;
 		display: flex;
 		flex-direction: column;
-		align-self: center;
-		width: 50%;
+		align-items: center;
+		width: 100%;
 		margin: 0;
 		margin-bottom: 10%;	
 	}
@@ -220,7 +215,22 @@ h6
 	{
 		display: flex;
 		flex-direction: row;
-		height: 250px;
+	}
+	.contact
+	{
+		flex: 1.5;
+	}
+	.about
+	{
+		flex: 1.5;
+	}
+	.loisirs
+	{
+		flex: 1.1;
+	}
+	.contact p, .about p
+	{
+		padding-left: 2%
 	}
 	.icones-loisirs
 	{
@@ -233,16 +243,9 @@ h6
 	{
 		margin: auto;
 	}
-	.divider2
-	{
-		width: 50%;
-		border: 1px solid #64b5f6;
-		margin: auto;
-		padding: 0;
-	}
 	.parcours
 	{
-		width: 100%;
+		width: 90%;
+		margin: auto;
 	}
-	
-	
+}
