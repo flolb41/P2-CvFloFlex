@@ -30,13 +30,13 @@ body
 	display: flex;
 	flex-direction: column;
 }
-.contact, .about
+.about
 {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40%;
 }
-.loisirs
+.contact, .loisirs
 {
 	display: flex;
 	flex-direction: column;
@@ -122,9 +122,9 @@ h1
 h2
 {
 	display: flex;
-	margin-left: 5%;
-	font-size: 1.3em;
+	font-size: 1.8em;
 	align-items: baseline;
+	margin: 0 0 10px 20px;
 }
 .divider
 {
@@ -172,9 +172,18 @@ li p
 	margin: 1% 2% 0 0;
 	width: 100%;
 }
-.desc *
+h3
 {
+	font-size: 1.3em;
 	margin: 0;
+}
+h4
+{
+	margin: 10px 0 10px 0;
+	color: #212121;
+	font-weight: normal;
+	font-size: 1.1em;
+	
 }
 h5
 {
@@ -198,7 +207,6 @@ h6
 		display: flex;
 		width: 100%;
 		max-width: 800px;
-		height: 800px;
 		margin: 0;
 		padding: 0;
 		margin-bottom: 5%;
@@ -233,36 +241,46 @@ h6
 	{
 		margin-bottom: 5%;
 	}
-	.container
+	h1
 	{
-		display: flex;
-		flex-direction: row;
+		padding: 0;
+		border-radius: 20px;
 	}
 	.contact
 	{
-		flex: 1.5;
+		margin: 0;
+	}
+	.contact p
+	{
+		margin-top: 0;
 	}
 	.about
 	{
-		flex: 1.5;
+		margin: 0;
 	}
 	.loisirs
 	{
-		flex: 1.1;
-	}
-	.contact p, .about p
-	{
-		padding-left: 2%
+		margin-bottom: 20px;
 	}
 	.icones-loisirs
 	{
 		display: flex;
-		flex-direction: column;
-		height: 200px;
-		margin: auto;
 	}
 	.icones-loisirs .fas
 	{
 		margin: auto;
+	}
+	.parcours
+	{
+		width: 100%;
+		padding: 0 5px;
+	}
+	h2
+	{
+		display: flex;
+		margin: 0;
+		width: 80%;
+		align-self: center;
+		justify-content: center;
 	}
 }
