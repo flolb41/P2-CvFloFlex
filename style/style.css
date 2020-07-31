@@ -20,10 +20,10 @@ body
 }
 .rounded-image
 {
-	width: 60%;
+	width: 55%;
 	border: 5px #B0BEC5 solid;
 	border-radius: 50%;
-	margin: 6% auto;
+	margin: 10% auto 20px;
 }
 .container
 {
@@ -56,7 +56,7 @@ h1
 	padding-left: 12%;
 	padding-right: 12%;
 	text-align: justify;
-	font-size: 1em;
+	font-size: 0.9em;
 }
 .icones-loisirs
 {
@@ -64,6 +64,10 @@ h1
 	justify-content: space-between;
 	margin: 2% 10% 2% 10%;
 	
+}
+.loisirs
+{
+	margin-top: 350px
 }
 .presentation .fas
 {
@@ -78,11 +82,11 @@ h1
 	width: 65%;
 	display: flex;
 	flex-direction: column;
-	padding-left: 5%;
+	padding-left: 40px;
 }
 .header
 {
-	margin: 15% 0 16% 0;
+	margin: 100px 0 100px 20px;
 }
 .prenom
 {
@@ -106,13 +110,16 @@ h1
 {
 	display: flex;
 	flex-direction: column;
+	margin-left: 10px;
+}
+.formation
+{
+	margin-top: 25px;
 }
 .logo1, .logo2, .logo3
 {
 	color: #64b5f6;
 	display: flex;
-	max-width: 35px;
-	height: 35px;
 	padding: 8px;
 }
 .title
@@ -122,7 +129,7 @@ h1
 h2
 {
 	display: flex;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	align-items: baseline;
 	margin: 0 0 10px 20px;
 }
@@ -130,11 +137,13 @@ h2
 {
 	border: 1px solid #64b5f6;
 	margin-bottom: 5%;
+	width: 100%
 }
 ul
 {
 	display: flex;
 	flex-direction: column;
+	padding-left: 0;
 }
 li
 {
@@ -151,8 +160,8 @@ i
 .fa-circle, .fa-dot-circle
 {
 	display: flex;
-	margin-bottom: 50px;
-	margin-top: 1%;
+	margin: 5px 10px 0 10px;
+	 
 }
 .fa-circle
 {
@@ -160,21 +169,23 @@ i
 }
 li p 
 {
-	width: 80%;
-	margin-top: 0px;
+	width: 100%;
+	margin: 0px;
 	color: #212121;
+	align-self: flex-start;
 }
+
 .desc
 {
 	color: #212121;
 	display: flex;
 	flex-direction: column;
-	margin: 1% 2% 0 0;
-	width: 100%;
+	margin: 0;
+	width: 250%;
 }
 h3
 {
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin: 0;
 }
 h4
@@ -182,16 +193,20 @@ h4
 	margin: 10px 0 10px 0;
 	color: #212121;
 	font-weight: normal;
-	font-size: 1.1em;
-	
+	font-size: 1em;	
+}
+.desc p
+{
+	font-size: 0.9em;
 }
 h5
 {
-	font-size: 1em;
+	font-size: 1.3em;
+	margin-top: 0;
 }
 h6
 {
-	font-size: 0.8em;
+	font-size: 1em;
 }
 						/*ECRANS PETITE TAILLE*/
 @media (max-width: 800px)
