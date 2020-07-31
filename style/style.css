@@ -270,10 +270,6 @@ h6
 	{
 		margin-top: 0;
 	}
-	.about
-	{
-		margin: 0;
-	}
 	.loisirs
 	{
 		margin-bottom: 20px;
@@ -285,6 +281,14 @@ h6
 	.icones-loisirs .fas
 	{
 		margin: auto;
+	}
+	.loisirs
+	{
+		margin-top: 0;
+	}
+	.about
+	{
+		margin-bottom: 0;
 	}
 	.parcours
 	{
