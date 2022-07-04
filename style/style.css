@@ -1,324 +1,196 @@
-body
-{
-	font-family: "Merienda One", cursive;
-	display: flex;
-	margin: 0;
-}
-*
-{
-	box-sizing: border-box;
-}
-					/* PARTIE GAUCHE*/
-.header2
-{
-	display: none;
-}
-.presentation
-{
-	display: flex;
-	flex-direction: column;
-	width: 33%;
-	min-width: 330px;
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
-	padding-top: 2%;
-	padding-right: 2%;
-	border-radius: 10px 100px / 120px;
-}
-.rounded-image
-{
-	width: 55%;
-	border: 5px #B0BEC5 solid;
-	border-radius: 50%;
-	margin: 10% auto 20px;
-}
-.container
-{
-	display: flex;
-	flex-direction: column;
-}
-.about
-{
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 40%;
-}
-.contact, .loisirs
-{
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-}
-.container h2
-{
-	font-family: 'Merienda One', cursive;
-	font-size: 1.5em;
-	background-color: #424242;
-	text-transform: uppercase;
-	color: #64b5f6;
-	text-align: center;
-	padding: 2%;
-	border-radius: 10px;
-}
-.contact p, .about p
-{
-	padding-left: 12%;
-	padding-right: 12%;
-	text-align: justify;
-	font-size: 0.8em;
-	
-}
-.icones-loisirs
-{
-	display: flex;
-	justify-content: space-between;
-	margin: 2% 10% 2% 10%;
-	
-}
-.loisirs
-{
-	margin-top: 350px;
-}
-.presentation .fas
-{
-	border: 2px solid #212121;
-	border-radius: 50%;
-	margin: 0;
-	padding: 2%;
-}
-.mail {
-	text-decoration: none;
-}
-					/* PARTIE DROITE*/
-.parcours
-{
-	width: 65%;
-	display: flex;
-	flex-direction: column;
-	padding-left: 40px;
-}
-header
-{
-	margin: 0px 0 50px 0px;
-	padding: 50px 20px;
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 100%);
-	border-radius: 50% 20% / 10% 40%;
-}
-.prenom
-{
-	font-family: 'Dancing Script', cursive;
-	font-weight: bold;
-	font-size: 3.5em;
-	color: rgba(9,9,121,1);
-}
-.nom
-{
-	color: #212121;
-}
-h1
-{
-	font-family: 'Merienda One';
-	font-size: 1.5em;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-.timeline
-{
-	flex-direction: column;
-	margin-left: 10px;
+* {
+  box-sizing: border-box;
 }
-.formation
-{
-	margin-top: 25px;
+/* header*/
+.header {
+  background-color: #333333;
 }
-.logo
-{
-	color: #64b5f6;
-	padding: 8px;
-}
-.title
-{
-	display: flex;
-}
-.presentation h2
-{
-	font-family: 'Merienda One', cursive;
-	font-size: 1.5em;
-	align-items: baseline;
-	margin: 0 0 10px 20px;
-}
-.divider
-{
-	border-width: 1px;
-	border-style: solid ;
-	border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(255,255,255,1) 100%);
-	border-image-slice: 1;
-	margin-bottom: 5%;
-	width: 100%
-}
-ul
-{
-	
-	padding-left: 0;
-}
-li
-{
-	display: flex;
-	color: #64b5f6;
-	list-style: none;
-	margin-bottom: 5%;
-}
-i
-{
-	align-self: flex-start;
-	margin-right: 15px;
-}
-.timeline i
-{
-	margin: 5px 10px 0 10px;
-	 
-}
-.fa-circle
-{
-	font-size: 0.7em;
-}
-li p 
-{
-	width: 100%;
-	margin: 0px;
-	color: #212121;
-	align-self: flex-start;
+.header2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.desc
-{
-	color: #212121;
-	margin: 0;
-	width: 250%;
+.contrat {
+  color: #fff;
+  font-size: 20px;
 }
 
-h3
-{
-	font-size: 1.2em;
-	margin: 0;
+.metier {
+  color: #b0bec5;
 }
-h4
-{
-	margin: 10px 0 10px 0;
-	color: #212121;
-	font-weight: normal;
-	font-size: 0.8em;	
+
+.prenom {
+  font-family: "azonix", cursive;
+  color: lime;
+  margin: 0;
+  padding: 2% 0;
 }
-.desc p
-{
-	font-size: 0.7em;
+
+.description {
+  font-size: 15px;
+  width: 80%;
 }
-h5
-{
-	font-size: 1.3em;
-	margin-top: 0;
+
+.rounded-image {
+  width: 200px;
+  border: 2px #b0bec5 solid;
+  margin: 20px auto;
+  border-radius: 3%;
+
 }
-h6
-{
-	font-size: 1em;
+/* PARTIE */
+
+.presentation {
+  display: flex;
+  background: #333;
+  justify-content: space-around;
 }
-						/*ECRANS PETITE TAILLE*/
-@media (max-width: 800px)
-{
-	body
-	{
-		display: flex;
-		flex-direction: column;	
-	}
-	h1
-	{
-		font-size: 1em;
-	}
-	.presentation
-	{
-		background-color: white;
-		display: flex;
-		width: 100%;
-		max-width: 800px;
-		margin: 0;
-		padding: 0;
-		margin-bottom: 5%;
-	}
-	.rounded-image
-	{
-		width: 30%;
-		margin-top: 20px;
-	}
-	header
-	{
-		display: none;
-	}
-	.prenom
-	{
-		font-size: 3.5em;
-	}
-	.metier
-	{
-		font-size: 2em;
-	}
-	.header2
-	{
-		background-color: white;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		margin: 0;	
-	}
-	.line
-	{
-		margin-bottom: 5%;
-	}
-	.container h2
-	{
-		padding: 0;
-		border-radius: 20px;
-		border: outset 5px;;
-	}
-	.contact
-	{
-		margin: 0;
-	}
-	.contact p
-	{
-		margin-top: 0;
-	}
-	.loisirs
-	{
-		margin-bottom: 20px;
-	}
-	.icones-loisirs
-	{
-		display: flex;
-	}
-	.icones-loisirs .fas
-	{
-		margin: auto;
-	}
-	.loisirs
-	{
-		margin-top: 0;
-	}
-	.about
-	{
-		margin-bottom: 0;
-	}
-	.parcours
-	{
-		width: 100%;
-		padding: 0 5px;
-	}
-	.presentation h2
-	{
-		display: flex;
-		margin: 0;
-		width: 80%;
-		align-self: center;
-		justify-content: center;
-	}
+.gauche, .droite {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.gauche {
+  flex-grow: 1;
+}
+
+.droite {
+  background-color: #b0bec5;
+  flex-grow: 2;
+}
+
+.box-gauche {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.box-unit {
+  background-color: black;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.competences {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.competences-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.lot {
+  display: flex;
+  justify-content: space-around;
+}
+
+h6 {
+  color: #fff;
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 2em;
+  margin: 0;
+  color: rgb(31, 131, 31);
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin: 0;
+  color: rgb(31, 131, 31);
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  color: lime;
+}
+
+.progress {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.progress-bar {
+  width: 0;
+  height: 16px;
+}
+
+.competence {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0;
+  padding: 2%;
+}
+
+.competence-lot {
+  width: 45%;
+}
+
+.competence-lot2 {
+  display: flex;
+  width: 40%;
+}
+
+.competence-title {
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #b0bec5;
+  margin: 0;
+}
+
+.contact p {
+  font-size: 0.8em;
+  margin: 5px 0;
+  color: #b0bec5;
+}
+
+.level {
+  font-size: 1em;
+  color: #b0bec5;
+  margin: 5px;
+}
+
+li {
+  color: #b0bec5;
+}
+
+p {
+  color: #b0bec5;
+}
+
+/* PARTIE DROITE */
+.droite {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+}
+.projet {
+  margin: 20px 0;
+}
+.title-projet {
+  font-weight: bold;
+  margin: 0;
 }
