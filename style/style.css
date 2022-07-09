@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 * {
@@ -14,31 +15,32 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-}
-
-.contrat {
-  color: #fff;
-  font-size: 20px;
-}
-
-.metier {
-  color: #b0bec5;
+  margin: 0 40px;
 }
 
 .prenom {
   color: lime;
   margin: 0;
-  padding: 2% 0;
+  padding: 1% 0;
+}
+
+.metier {
+  color: #b0bec5;
+  font-size: 1em;
+}
+
+.contrat {
+  color: #fff;
+  font-size: 1em;
 }
 
 .description {
-  font-size: 15px;
+  font-size: 0.8em;
   width: 80%;
 }
 
 .rounded-image {
-  width: 200px;
+  width: 150px;
   border: 2px #b0bec5 solid;
   margin: 20px auto;
   border-radius: 3%;
@@ -56,7 +58,7 @@ body {
   flex-direction: column;
   height: 100%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .gauche {
@@ -92,9 +94,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 5% 0;
+  margin: 0;
 }
 
+.competences-list-lang {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.competence-lang {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.competence-os {
+  display: flex;
+  justify-content: space-around;
+}
 .lot {
   display: flex;
   justify-content: space-around;
@@ -102,31 +120,50 @@ body {
 
 h6 {
   color: #fff;
-  font-size: 20px;
+  font-size: 1em;
+}
+
+.diplome {
+  color: #fff;
+  font-size: 0.8em;
 }
 
 h5 {
-  font-size: 2em;
+  font-size: 0.6em;
   margin: 0;
   color: rgb(31, 131, 31);
   text-align: center;
 }
 
+.title {
+  margin: 0;
+}
+
 h4 {
-  font-size: 1.5em;
+  font-size: 1em;
+  margin: 0;
+  color: rgb(31, 131, 31);
+}
+
+.form-title {
+  font-size: 1em;
   margin: 0;
   color: rgb(31, 131, 31);
 }
 
 h3 {
-  font-size: 1.5em;
   margin: 0;
   text-align: center;
   color: lime;
 }
 
+.titre-droite {
+  font-size: 1.2em;
+}
+
 .progress {
   width: 100%;
+  height: 10px;
   border-radius: 10px;
 }
 
@@ -140,7 +177,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   margin: 0 0;
-  padding: 2%;
+  padding: 2px;
 }
 
 .competence-lot {
@@ -149,11 +186,15 @@ h3 {
 
 .competence-lot2 {
   display: flex;
-  width: 40%;
+  width: 45%;
+}
+
+.competence-lot3 {
+  width: 80%;
 }
 
 .competence-title {
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 10px;
   color: #b0bec5;
   margin: 0;
@@ -166,16 +207,30 @@ h3 {
 }
 
 .level {
-  font-size: 1em;
+  font-size: 0.8em;
   color: #b0bec5;
-  margin: 5px;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
 }
 
 li {
   color: #b0bec5;
+  font-size: 0.8em;
+
 }
 
-p {
+.desc p, p {
+  font-size: 0.8em;
+  margin: 5px 0;
+  color: #b0bec5;
+}
+
+.contact p {
+  font-size: 0.6em;
+  margin: 5px 0;
   color: #b0bec5;
 }
 
@@ -187,9 +242,14 @@ p {
   background-color: #333333;
 }
 .projet {
-  margin: 20px 0;
+  margin: 8px 0;
 }
-.title-projet {
+.projet p {
   font-weight: bold;
   margin: 0;
+}
+
+.projet a {
+  margin-left: 10px;
+  font-size: 0.8em;
 }
